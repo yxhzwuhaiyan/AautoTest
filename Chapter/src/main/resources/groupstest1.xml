@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name ="goruptest">
+    <test name ="runall">
+        <classes>
+            <class name ="TestNG.group.groups"/>
+            <class name ="TestNG.group.groups1"/>
+            <class name ="TestNG.group.nogroups"/>
+        </classes>
+    </test>
+    <test name ="onlygroup">
+       <groups>
+           <run>
+               <include name="1"/>
+           </run>
+       </groups>
+        <classes>
+            <class name ="TestNG.group.groups"/>
+            <class name ="TestNG.group.groups1"/>
+            <class name ="TestNG.group.nogroups"/>
+        </classes>
+    </test>
+</suite>
